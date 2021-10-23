@@ -7,7 +7,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `Bot Name : %me
 Your Name : %name
-Owner : wa.me/60199782326
+Owner : wa.me/6281252848955
 Uptime : %uptime
 Limit : %limit
 Prefix : Multi
