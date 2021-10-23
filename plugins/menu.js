@@ -18,8 +18,8 @@ Jam : %time
 Date : %date
 Day : %week
 `.trimStart(),
-  header: '❑「 ```%category``` 」',
-  body: '▷ %cmd %islimit ',
+  header: '「 %category 」',
+  body: '• %cmd %islimit ',
   footer: '\n',
   after: `
 *%npmname@^%version*
