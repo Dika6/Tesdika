@@ -130,8 +130,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
   try {
     await conn.fakeReply(m.chat, `
-[❗] *L O A D I N G . . .*
-    *READING* _menu.js_
+*Sedang memuat . . .*
+    
 `, '0@s.whatsapp.net', `${ucapan()} , ${conn.getName(m.sender)}`, 'status@broadcast')
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, level, role, registered } = global.db.data.users[m.sender]
@@ -186,9 +186,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `Ｉｔｓｕｋｉ　Ｂｏｔ　翁ウざ\n\nUptime : ${uptime}\nUcapan : ${ucapan()}, ${name}`.trim(),
-          "description": "(っ◔◡◔)っ ♥ Itsuki Bot ♥",
-          "buttonText": "CLICK HERE~~",
+          "title": `Menu Bot\n\nUptime : ${uptime}\nUcapan : ${ucapan()}, ${name}`.trim(),
+          "description": "Sholeh-Bot",
+          "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
